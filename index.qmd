@@ -1,0 +1,71 @@
+---
+about:
+  template: trestles
+  image: cover.png
+  links:
+    - icon: book
+      href: /chapters/CH01.html
+      text: "Book"
+      aria-label: "Book"
+    - icon: shop
+      href: https://bitcoinbook.shop/products/fifteen-shades-of-time
+      text: "Presale" 
+      aria-label: "Online bookstore"
+    - icon: amazon
+      href: https://amazon.com
+      text: "Amazon"
+      aria-label: "Amazon"              
+navbar: true
+sidebar: false
+page-layout: full
+format:
+  html:
+    grid:
+      margin-width: 0px
+      sidebar-width: 0px
+      body-width: 1400px
+      gutter-width: 25px
+    toc: false
+listing:
+  id: custom-toc
+  contents: chapters
+  sort: false
+  type: table
+  fields:
+    - title
+    - reading-time
+  sort-ui: false
+  filter-ui: false
+---
+::: {.content-hidden when-format="pdf"}
+## About this book {.unnumbered}
+
+What exactly is time? 
+This question even troubles world-renowned scientists.
+This book presents fifteen possibilities all bound into one compelling narrative.
+
+Troubled philosopher Luca Cangemi wrestles with the fabric of time in a lecture that will transform the lives of every person in attendance: a grieving mother desperate to finish her degree, an immortal delivery driver, a psychonaut hell-bent on documenting her trips, a boy who dreams of living on Mars, and many others.
+
+They all discover something incredible about the nature of time. 
+Will you discover it too?
+
+This novella will interest future seekers, metaphysical deep-thinkers, sci-fi philosophers, and time-travel aficionados.
+
+## Reviews {.unnumbered}
+
+> “A book of unexpected insights and extraordinary grace, rippling with loveliness, sorrow, and finesse. All taking place in one room, bound by a single unraveling ribbon of time.”
+> 
+> -- **David Eagleman**, *NYT bestselling author and Stanford neuroscientist*
+
+> “Charter balances the light but rich ideas of philosophy and time with well-drawn if flawed characters, hustling and striving, and wishing for better lives. As one of them says, ‘There are no checks at the door. Anyone can walk in and expand their mind.’ I’m glad I took my seat for this novella and surrounded myself with the sounds and actions of its characters.”
+> 
+> -- **Tommy Dean**, *Editor of Fractured Lit and author of ‘Hollows’*
+
+> “An intriguing and emotionally involving book, where notions of how we experience time interweaves with the visceral complexity of life itself. Using the scenario of a single lecture about Time as the centrepiece, the author passes the narrative baton around a cast of intriguing characters, each with their own compelling issues and concerns.”
+> 
+> -- **KM Elkes**, *author of All That Is Between Us*
+
+## Content
+::: {#sample-listings}
+:::
+:::
