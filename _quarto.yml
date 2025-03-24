@@ -58,7 +58,12 @@ book:
     site: "@konsensusn"
   chapters:
     - index.qmd
-    - chapters/CH01.qmd
+    - chapters/ch01.qmd
+    - chapters/ch02.qmd
+    - part: Part 2
+      chapters:
+        - chapters/ch03.qmd
+        - chapters/ch04.qmd
 
 format:
   html:

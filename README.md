@@ -15,8 +15,7 @@ Welcome to the Quarto Book Template repository! This template provides a solid f
 
 ### Prerequisites
 
-- **Quarto:** Ensure you have the latest version of Quarto installed. Download it from the [Quarto Downloads Page](https://quarto.org/docs/get-started/installation.html).
-- **LaTeX (for PDF output):** Install a LaTeX distribution like [TinyTeX](https://yihui.org/tinytex/) if you plan to generate PDF versions.
+- **Quarto:** Ensure you have the latest version of Quarto installed. Download it from the [Quarto Downloads Page](https://quarto.org/docs/get-started/).
 
 ### Installation
 
@@ -36,20 +35,6 @@ Welcome to the Quarto Book Template repository! This template provides a solid f
    ```bash
    quarto render
    ```
-
-## Project Structure
-
-## Rendering Methods
-
-### Local Rendering
-
-You can render your Quarto book locally using the following command:
-
-```bash
-quarto render
-```
-
-This command will generate all specified output formats (HTML, PDF, EPUB, MS Word) as defined in the `_quarto.yml` configuration file.
 
 ### PDF/LaTeX Rendering with Custom Preamble
 
