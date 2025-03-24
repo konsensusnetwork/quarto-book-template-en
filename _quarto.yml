@@ -28,13 +28,9 @@ book:
         text: "Read online"
         href: index.qmd
         aria-label: Book
-      - icon: shop
-        text: "Buy this book!"
-        href: https://bitcoinbook.shop/products/
-        aria-label: Shop
   page-footer:
     left:
-      - text: "© 2024 Konsensus Network"
+      - text: "© 2025 Konsensus Network"
     center:
       - text: "License"
         href: index.qmd
