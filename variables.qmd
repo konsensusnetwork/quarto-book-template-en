@@ -1,0 +1,14 @@
+\newcommand{\booktitle}{ {{< var booktitle >}} }
+\newcommand{\bookauthor}{ {{< var bookauthor >}} }
+\newcommand{\booksubtitle}{ {{< var booksubtitle >}} }
+\newcommand{\yearpublished}{ {{< var bookyear >}} }
+\newcommand{\stringlicense}{ {{< var stringlicense >}} }
+\newcommand{\stringpublisher}{ {{< var stringpublisher >}} }
+\newcommand{\ISBNHC}{ {{< var isbnhc >}} }
+\newcommand{\ISBNSC}{ {{< var isbnsc >}} }
+\newcommand{\ISBNEBOOK}{ {{< var isbnebook >}} }
+\newcommand{\press}{ {{< var press>}} }
+\newcommand{\originaltitle}{ {{< var originaltitle >}} }
+\newcommand{\originalsubtitle}{ {{< var originalsubtitle >}} }
+\newcommand{\originalauthor}{ {{< var originalauthor >}} }
+\newcommand{\originalyear}{ {{< var originalyear >}} }

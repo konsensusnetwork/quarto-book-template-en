@@ -1,33 +1,13 @@
 % typographical packages
 \usepackage{microtype}
 \usepackage{setspace}
-\tolerance=6000
-\hyphenpenalty=1000
+%\tolerance=6000
+%\hyphenpenalty=1000
 
 % typographical settings for the body text
 \setlength{\parskip}{0em}
 \setlength{\parindent}{1em}
-\linespread{1.2}
-
-% DEFINITIONS TITLE PAGE / COPYRIGHT
-\newcommand{\titleoriginal}{Title}
-\newcommand{\subtitleoriginal}{Subtitle}
-\newcommand{\yearoriginal}{Year}
-%\newcommand{\subtitletranslation}{Der Übergang zum Informationszeitalter}
-%\newcommand{\yeartranslation}{2024}
-%\newcommand{\stringtranslation}{Übersetzung}
-\newcommand{\stringlicense}{All Rights Reserved.}
-\newcommand{\stringpublisher}{Published by}
-\newcommand{\ISBNHC}{978-9916-}
-\newcommand{\ISBNSC}{978-9916-}
-\newcommand{\ISBNEBOOK}{978-9916-}
-%\newcommand{\ISBNAUDIO}{978-9916-}
-\newcommand{\press}{Konsensus Network}
-%\newcommand{\translatorone}{Andreas Tank}
-%\newcommand{\translators}{
-%\large\textit{\stringtranslation:}\\
-%\translatorone\\
-%}
+%\linespread{1.2}
 
 % PHYSICAL DOCUMENT SETUP
 \setstocksize{210mm}{148mm}
@@ -105,7 +85,7 @@
   \begin{center}
   \vspace*{\drop}
   \rule{\textwidth}{0in}\par
-  {\Large\sffamily\kallisto\thetitle\par}
+  {\Large\sffamily\booktitle\par}
   \rule{\textwidth}{0in}\par
   \vfill
   \end{center}
@@ -119,13 +99,13 @@
   \setlength\drop{0.15\textheight}
   \begin{center}
   \vspace*{\drop}
-  {\huge\sffamily\kallisto\thetitle\par}
+  {\huge\sffamily\booktitle\par}
   \vspace{2em}
   %{\normalsize\sffamily\textit\subtitletranslation\par}
   %\vspace{2em}
   \rule{5.5cm}{0.3mm}\par
   \vspace{2em}
-  {\Large\sffamily\textit\theauthor\par}
+  {\Large\sffamily\textit\bookauthor\par}
   \vspace{3em}
   %{\footnotesize\sffamily\textit\translators\par}
   \vfill
@@ -141,15 +121,15 @@
   \vphantom{just for the drop}
   \vfill
   \begin{scriptsize}
-  \noindent \copyright\space \yearoriginal: \theauthor
-  \par\noindent \textit{\titleoriginal}
+  \noindent \copyright\space \yearpublished: \bookauthor
+  \par\noindent \textit{\booktitle:\space \booksubtitle}
   \vspace{0.5\baselineskip}
   %\par\noindent \copyright\space \yeartranslation\space \stringtranslation: \translatorone
   %\par\noindent \textit{\thetitle: \subtitletranslation}
   \vspace{\baselineskip}
   \par\noindent \textit{\stringlicense}
   \vspace{0.5\baselineskip}
-  \par\noindent \stringpublisher: \href{https://konsensus.network}{\textit{konsensus.network}}
+  \par\noindent\stringpublisher: \href{https://konsensus.network}{\textit{konsensus.network}}
   \vspace{0.5\baselineskip}
   \par\noindent v1.0.0
   \vspace{0.5\baselineskip}

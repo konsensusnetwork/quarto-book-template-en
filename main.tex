@@ -90,36 +90,30 @@
 \def\fps@figure{htbp}
 \makeatother
 
+\newcommand{\booktitle}{ Title }
+\newcommand{\bookauthor}{ Author }
+\newcommand{\booksubtitle}{ Subtitle }
+\newcommand{\yearpublished}{ 2025 }
+\newcommand{\stringlicense}{ All rights reserved }
+\newcommand{\stringpublisher}{ Published by }
+\newcommand{\ISBNHC}{ 978-1-234-56789-0 }
+\newcommand{\ISBNSC}{ 978-1-234-56789-1 }
+\newcommand{\ISBNEBOOK}{ 978-1-234-56789-2 }
+\newcommand{\press}{ Konsensus Network }
+\newcommand{\originaltitle}{ Original title }
+\newcommand{\originalsubtitle}{ Original subtitle }
+\newcommand{\originalauthor}{ Original author }
+\newcommand{\originalyear}{ Original year }
 % typographical packages
 \usepackage{microtype}
 \usepackage{setspace}
-\tolerance=6000
-\hyphenpenalty=1000
+%\tolerance=6000
+%\hyphenpenalty=1000
 
 % typographical settings for the body text
 \setlength{\parskip}{0em}
 \setlength{\parindent}{1em}
-\linespread{1.2}
-
-% DEFINITIONS TITLE PAGE / COPYRIGHT
-\newcommand{\titleoriginal}{Title}
-\newcommand{\subtitleoriginal}{Subtitle}
-\newcommand{\yearoriginal}{Year}
-%\newcommand{\subtitletranslation}{Der Übergang zum Informationszeitalter}
-%\newcommand{\yeartranslation}{2024}
-%\newcommand{\stringtranslation}{Übersetzung}
-\newcommand{\stringlicense}{All Rights Reserved.}
-\newcommand{\stringpublisher}{Published by}
-\newcommand{\ISBNHC}{978-9916-}
-\newcommand{\ISBNSC}{978-9916-}
-\newcommand{\ISBNEBOOK}{978-9916-}
-%\newcommand{\ISBNAUDIO}{978-9916-}
-\newcommand{\press}{Konsensus Network}
-%\newcommand{\translatorone}{Andreas Tank}
-%\newcommand{\translators}{
-%\large\textit{\stringtranslation:}\\
-%\translatorone\\
-%}
+%\linespread{1.2}
 
 % PHYSICAL DOCUMENT SETUP
 \setstocksize{210mm}{148mm}
@@ -197,7 +191,7 @@
   \begin{center}
   \vspace*{\drop}
   \rule{\textwidth}{0in}\par
-  {\Large\sffamily\kallisto\thetitle\par}
+  {\Large\sffamily\booktitle\par}
   \rule{\textwidth}{0in}\par
   \vfill
   \end{center}
@@ -211,13 +205,13 @@
   \setlength\drop{0.15\textheight}
   \begin{center}
   \vspace*{\drop}
-  {\huge\sffamily\kallisto\thetitle\par}
+  {\huge\sffamily\booktitle\par}
   \vspace{2em}
   %{\normalsize\sffamily\textit\subtitletranslation\par}
   %\vspace{2em}
   \rule{5.5cm}{0.3mm}\par
   \vspace{2em}
-  {\Large\sffamily\textit\theauthor\par}
+  {\Large\sffamily\textit\bookauthor\par}
   \vspace{3em}
   %{\footnotesize\sffamily\textit\translators\par}
   \vfill
@@ -233,15 +227,15 @@
   \vphantom{just for the drop}
   \vfill
   \begin{scriptsize}
-  \noindent \copyright\space \yearoriginal: \theauthor
-  \par\noindent \textit{\titleoriginal}
+  \noindent \copyright\space \yearpublished: \bookauthor
+  \par\noindent \textit{\booktitle:\space \booksubtitle}
   \vspace{0.5\baselineskip}
   %\par\noindent \copyright\space \yeartranslation\space \stringtranslation: \translatorone
   %\par\noindent \textit{\thetitle: \subtitletranslation}
   \vspace{\baselineskip}
   \par\noindent \textit{\stringlicense}
   \vspace{0.5\baselineskip}
-  \par\noindent \stringpublisher: \href{https://konsensus.network}{\textit{konsensus.network}}
+  \par\noindent\stringpublisher: \href{https://konsensus.network}{\textit{konsensus.network}}
   \vspace{0.5\baselineskip}
   \par\noindent v1.0.0
   \vspace{0.5\baselineskip}
@@ -428,16 +422,16 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Book Title},
-  pdfauthor={Book Author},
+  pdftitle={Title of the book},
+  pdfauthor={Author of the book},
   pdflang={en},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{Book Title}
-\author{Book Author}
-\date{+0015-01-01}
+\title{Title of the book}
+\author{Author of the book}
+\date{+0100-01-01}
 
 \begin{document}
 \frontmatter

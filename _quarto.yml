@@ -5,9 +5,9 @@ project:
     browser: false
 
 book:
-  title: "Book Title"
+  title: Title of the book
   output-file: main
-  author: "Book Author"
+  author: Author of the book
   date: "01/01/0000"
   image: cover.png
   image-alt: "Book Cover"
@@ -85,6 +85,7 @@ format:
     keep-tex: true
     colorlinks: false
     include-in-header:
+      - variables.qmd
       - preamble.tex
   epub:
     cover-image: cover.png
