@@ -65,7 +65,7 @@ format:
   html:
     lang: en
     theme:
-      light: [flatly, theme.scss, theme-light.scss]
+      light: [flatly, styles/theme.scss, styles/theme-light.scss]
     number-depth: 2
     grid:
       sidebar-width: 500px
@@ -85,8 +85,9 @@ format:
     keep-tex: true
     colorlinks: false
     include-in-header:
-      - variables.qmd
-      - preamble.tex
+      - partials/variables.qmd
+      - partials/preamble.tex
+      - partials/custom-pages.tex
   epub:
     cover-image: cover.png
     cover-image-alt: |
@@ -96,5 +97,5 @@ format:
     toc-depth: 1
     toc-title: Contents
     lang: "en-UK"
-    css: epub.css
+    css: styles/epub.css
     number-depth: 2

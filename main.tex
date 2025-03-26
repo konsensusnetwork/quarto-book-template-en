@@ -123,17 +123,16 @@
 \setulmarginsandblock{22mm}{28mm}{*}
 
 % FONTS
-
 \usepackage{fontspec}
-\setmainfont{Alegreya}[
-    Path=./fonts/alegreya/,
-    Scale=1,
-    Extension=.ttf,
-    UprightFont=*-Regular,
-    BoldFont=*-Bold,
-    ItalicFont=*-Italic,
-    BoldItalicFont=*-BoldItalic
-]
+% \setmainfont{Alegreya}[
+%     Path=./fonts/alegreya/,
+%     Scale=1,
+%     Extension=.ttf,
+%     UprightFont=*-Regular,
+%     BoldFont=*-Bold,
+%     ItalicFont=*-Italic,
+%     BoldItalicFont=*-BoldItalic
+% ]
 
 \setsansfont{stone-sans}[
     Path=./fonts/stone-sans/,
@@ -145,25 +144,15 @@
     BoldItalicFont=*-SemiBoldItalic
 ]
 
-% \setmainfont{stone-serif}[
-%     Path=./fonts/stone-serif-itc-pro/,
-%     Scale=1,
-%     Extension=.OTF,
-%     UprightFont=*-Regular,
-%     BoldFont=*-SemiBd,
-%     ItalicFont=*-MediumIt,
-%     BoldItalicFont=*-SemiBdIt
-% ]
-
-% \setsansfont{stone-sans}[
-%     Path=./fonts/stone-sans/,
-%     Scale=1,
-%     Extension=.otf,
-%     UprightFont=*-Medium,
-%     BoldFont=*-Semibold,
-%     ItalicFont=*-MediumItalic,
-%     BoldItalicFont=*-SemiBoldItalic
-% ]
+\setmainfont{stone-serif}[
+    Path=./fonts/stone-serif-itc-pro/,
+    Scale=1,
+    Extension=.OTF,
+    UprightFont=*-Regular,
+    BoldFont=*-SemiBd,
+    ItalicFont=*-MediumIt,
+    BoldItalicFont=*-SemiBdIt
+]
 
 \newfontfamily{\kallisto}{Kallisto}[
   Path=./fonts/kallisto/,
@@ -174,6 +163,7 @@
   BoldItalicFont=* Bold Italic
 ]
 
+% LETTRINE global options
 \usepackage{lettrine}
 \setcounter{DefaultLines}{3}
 \renewcommand{\DefaultLoversize}{0.1}
@@ -184,73 +174,7 @@
 
 %\usepackage[footskip=8mm]{geometry}
 
-% custom second title page
-\makeatletter
-\newcommand*\halftitlepage{\begingroup 
-  \setlength\drop{0.1\textheight}
-  \begin{center}
-  \vspace*{\drop}
-  \rule{\textwidth}{0in}\par
-  {\Large\sffamily\booktitle\par}
-  \rule{\textwidth}{0in}\par
-  \vfill
-  \end{center}
-\endgroup}
-\makeatother
 
-% custom title page
-\makeatletter
-\newlength\drop
-\newcommand*\titleM{\begingroup 
-  \setlength\drop{0.15\textheight}
-  \begin{center}
-  \vspace*{\drop}
-  {\huge\sffamily\booktitle\par}
-  \vspace{2em}
-  %{\normalsize\sffamily\textit\subtitletranslation\par}
-  %\vspace{2em}
-  \rule{5.5cm}{0.3mm}\par
-  \vspace{2em}
-  {\Large\sffamily\textit\bookauthor\par}
-  \vspace{3em}
-  %{\footnotesize\sffamily\textit\translators\par}
-  \vfill
-  \includegraphics[width=3.5cm]{figures/knw.png}\par
-  \end{center}
-\endgroup}
-\makeatother
-
-% copyright page
-\makeatletter
-\newcommand*\copyrightpage{\begingroup
-  \setlength\drop{0.1\textheight}
-  \vphantom{just for the drop}
-  \vfill
-  \begin{scriptsize}
-  \noindent \copyright\space \yearpublished: \bookauthor
-  \par\noindent \textit{\booktitle:\space \booksubtitle}
-  \vspace{0.5\baselineskip}
-  %\par\noindent \copyright\space \yeartranslation\space \stringtranslation: \translatorone
-  %\par\noindent \textit{\thetitle: \subtitletranslation}
-  \vspace{\baselineskip}
-  \par\noindent \textit{\stringlicense}
-  \vspace{0.5\baselineskip}
-  \par\noindent\stringpublisher: \href{https://konsensus.network}{\textit{konsensus.network}}
-  \vspace{0.5\baselineskip}
-  \par\noindent v1.0.0
-  \vspace{0.5\baselineskip}
-  \setlength{\parindent}{2em}% default 20pt
-  \par\noindent ISBN \ISBNHC \:Hardcover
-  \par\hspace{0.28\parindent}\ISBNSC \:Paperback
-  \par\hspace{0.28\parindent}\ISBNEBOOK \:E-book\par
-  \setlength{\parindent}{0pt}
-  \end{scriptsize}
-  \vspace{3em}
-  \par\noindent \href{https://konsensus.network}{\large\MakeUppercase \press \hspace{3em} \includegraphics[width=1cm]{figures/freestarfish.png}}
-  \setcounter{footnote}{0}
-  \clearpage
-\endgroup}
-\makeatother
 
 % HEADER AND FOOTER MANIPULATION
 % for normal pages
@@ -360,6 +284,73 @@
 }
 \makeatother
 % END PREAMBLE
+% custom second title page
+\makeatletter
+\newcommand*\halftitlepage{\begingroup 
+  \setlength\drop{0.1\textheight}
+  \begin{center}
+  \vspace*{\drop}
+  \rule{\textwidth}{0in}\par
+  {\Large\sffamily\booktitle\par}
+  \rule{\textwidth}{0in}\par
+  \vfill
+  \end{center}
+\endgroup}
+\makeatother
+
+% custom title page
+\makeatletter
+\newlength\drop
+\newcommand*\titleM{\begingroup 
+  \setlength\drop{0.15\textheight}
+  \begin{center}
+  \vspace*{\drop}
+  {\huge\sffamily\booktitle\par}
+  \vspace{2em}
+  %{\normalsize\sffamily\textit\subtitletranslation\par}
+  %\vspace{2em}
+  \rule{5.5cm}{0.3mm}\par
+  \vspace{2em}
+  {\Large\sffamily\textit\bookauthor\par}
+  \vspace{3em}
+  %{\footnotesize\sffamily\textit\translators\par}
+  \vfill
+  \includegraphics[width=3.5cm]{figures/knw.png}\par
+  \end{center}
+\endgroup}
+\makeatother
+
+% copyright page
+\makeatletter
+\newcommand*\copyrightpage{\begingroup
+  \setlength\drop{0.1\textheight}
+  \vphantom{just for the drop}
+  \vfill
+  \begin{scriptsize}
+  \noindent \copyright\space \yearpublished: \bookauthor
+  \par\noindent \textit{\booktitle:\space \booksubtitle}
+  \vspace{0.5\baselineskip}
+  %\par\noindent \copyright\space \yeartranslation\space \stringtranslation: \translatorone
+  %\par\noindent \textit{\thetitle: \subtitletranslation}
+  \vspace{\baselineskip}
+  \par\noindent \textit{\stringlicense}
+  \vspace{0.5\baselineskip}
+  \par\noindent\stringpublisher: \href{https://konsensus.network}{\textit{konsensus.network}}
+  \vspace{0.5\baselineskip}
+  \par\noindent v1.0.0
+  \vspace{0.5\baselineskip}
+  \setlength{\parindent}{2em}% default 20pt
+  \par\noindent ISBN \ISBNHC \:Hardcover
+  \par\hspace{0.28\parindent}\ISBNSC \:Paperback
+  \par\hspace{0.28\parindent}\ISBNEBOOK \:E-book\par
+  \setlength{\parindent}{0pt}
+  \end{scriptsize}
+  \vspace{3em}
+  \par\noindent \href{https://konsensus.network}{\large\MakeUppercase \press \hspace{3em} \includegraphics[width=1cm]{figures/freestarfish.png}}
+  \setcounter{footnote}{0}
+  \clearpage
+\endgroup}
+\makeatother
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother

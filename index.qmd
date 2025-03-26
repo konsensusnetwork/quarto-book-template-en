@@ -7,14 +7,14 @@ about:
       href: /chapters/CH01.html
       text: "Book"
       aria-label: "Book"
-    - icon: shop
-      href: https://bitcoinbook.shop/products/fifteen-shades-of-time
-      text: "Presale" 
-      aria-label: "Online bookstore"
-    - icon: amazon
-      href: https://amazon.com
-      text: "Amazon"
-      aria-label: "Amazon"              
+    # - icon: shop
+    #   href: https://bitcoinbook.shop/products/fifteen-shades-of-time
+    #   text: "Presale" 
+    #   aria-label: "Online bookstore"
+    # - icon: amazon
+    #   href: https://amazon.com
+    #   text: "Amazon"
+    #   aria-label: "Amazon"              
 navbar: true
 sidebar: false
 page-layout: full
@@ -25,17 +25,17 @@ format:
       sidebar-width: 0px
       body-width: 1400px
       gutter-width: 25px
-    toc: false
-listing:
-  id: custom-toc
-  contents: chapters
-  sort: false
-  type: table
-  fields:
-    - title
-    - reading-time
-  sort-ui: false
-  filter-ui: false
+#     toc: false
+# listing:
+#   id: custom-toc
+#   contents: chapters
+#   sort: false
+#   type: table
+#   fields:
+#     - title
+#     - reading-time
+#   sort-ui: false
+#   filter-ui: false
 ---
 # Title
 
