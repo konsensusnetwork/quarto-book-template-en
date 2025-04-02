@@ -5,8 +5,8 @@ project:
     browser: false
 
 book:
-  title: Title of the book
   output-file: main
+  title: Title of the book
   author: Author of the book
   date: "01/01/0000"
   image: cover.png
@@ -61,6 +61,9 @@ book:
         - chapters/ch03.qmd
         - chapters/ch04.qmd
 
+toc: true
+toc-title: Contents
+
 format:
   html:
     lang: en
@@ -72,7 +75,6 @@ format:
       body-width: 900px
       margin-width: 350px
       gutter-width: 1em
-    toc: true
     toc-location: left
     reference-location: margin
   pdf:
@@ -81,7 +83,6 @@ format:
     classoption: smalldemyvopaper,10pt,twoside,onecolumn,openright,extrafontsizes,hidelinks
     papersize: a5
     toc-depth: 1
-    toc-title: Contents
     keep-tex: true
     colorlinks: false
     include-in-header:
@@ -93,9 +94,11 @@ format:
     cover-image-alt: |
       Book Cover
     creator: Konsensus Network
-    toc: true
     toc-depth: 1
-    toc-title: Contents
     lang: "en-UK"
     css: styles/epub.css
     number-depth: 2
+
+filters:
+   - latex-environment
+environments: [center]

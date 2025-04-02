@@ -6,8 +6,8 @@
 
 % typographical settings for the body text
 %\setlength{\parskip}{1pt plus2pt}
-\setlength{\parindent}{1em}
-\linespread{1.2}
+%\setlength{\parindent}{1em}
+%\linespread{1.2}
 
 % PHYSICAL DOCUMENT SETUP
 \setstocksize{210mm}{148mm}
@@ -68,8 +68,6 @@
 
 %\usepackage[footskip=8mm]{geometry}
 
-
-
 % HEADER AND FOOTER MANIPULATION
 % for normal pages
 \nouppercaseheads
@@ -88,15 +86,6 @@
 \makeoddfoot{plain}{}{\scriptsize\sffamily\mdseries\thepage}{}
 \pagestyle{mystyle}
 
-\newif\ifmainmatter
-\appto\mainmatter{\mainmattertrue}
-\appto\backmatter{\mainmatterfalse}
-\appto\appendix{\mainmatterfalse}
-
-\renewcommand\chaptermark[1]{%
-  \markboth{\MakeUppercase{%
-    \ifmainmatter~\oldstylenums\thechapter.~\fi#1}}{}}%
-
 % TOC
 \usepackage[]{tocloft}
 \renewcommand{\cftsectiondotsep}{\cftnodots}
@@ -111,7 +100,6 @@
 \setlength{\cftsectionindent}{7em}
 \setsecnumdepth{chapter}
 \setcounter{tocdepth}{0}
-
 
 % Redefine footnote presentation
 \makeatletter
